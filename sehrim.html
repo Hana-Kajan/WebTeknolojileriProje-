@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web</title>
+    <link rel="stylesheet" href="master.css">
+
+  </head>
+  <body>
+    <div id="genel">
+      <header id="header">
+        <nav id="header">
+          <ul>
+            <li><a href="hakkimda.html">Hakkimda</a></li>
+              
+                <li><a href="sehrim.html">Sehrim</a></li>
+                  <li><a href="miras.html">Miras</a></li>
+                  <li><a href="iletisim.html">Iletisim</a></li>
+          </ul>
+    </nav>
+
+      </header>
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+      <div class="slider">
+        <figure>
+          <div class="slide">
+            <img src="fortica.jpg" >
+          </div>
+
+          <div class="slide">
+            <img src="atlamak.jpg" >
+          </div>
+
+          <div class="slide">
+            <img src="okul.jpg" >
+                  </div>
+
+          <div class="slide">
+            <img src="cami.jpg" >
+                    </div>
+
+          <div class="slide">
+            <img src="blagaj.jpg">
+          </div>
+
+        </figure>
+
+      </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+  </body>
+</html>

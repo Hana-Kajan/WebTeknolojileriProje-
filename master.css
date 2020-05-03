@@ -1,0 +1,249 @@
+body{
+  background-image: url("mostar.jpg");
+}
+
+.sol{
+  width:980px;
+  height:590px;
+}
+
+*{
+  margin: 0;
+  padding:0;
+  font-family: verdana;
+}
+
+#header nav{
+  width:100%;
+  height: 80px;
+  display:block;
+  background-color: #0001;
+
+}
+
+#genel{
+  width: 100%;
+  height: auto;
+}
+
+nav{
+  width: 100%;
+  height: 80px;
+  background-color: #0009;
+line-height: 80px;
+}
+
+nav ul{
+  float: right;
+
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  line-height: 80px;
+  transition: 0.8s all;
+}
+
+nav ul li:hover{
+  background-color:#0000ff;
+}
+
+nav ul li a{
+  text-decoration: none;
+  text-decoration-style: bold;
+  color: black;
+  padding: 30px;
+}
+
+.sol{
+  float: left;
+  width: 300px;
+  height: 400px;
+
+}
+
+.sol img{
+  width: 350px;
+  height:350px;
+  margin-left: 150px;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+.sag{
+  float: right;
+  width: 990px;
+  height: 450px;
+}
+
+.form{
+  width: 40%;
+  height:40%;
+  margin-top: 0px;
+  margin-bottom: 200px;
+  margin-left:450px;
+  margin-right: 250px;
+}
+
+.contact-input{
+  width: 100%;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+  transition: 400ms;
+  font-weight: 500;
+  color: black;
+}
+
+.contact-input::placeholder{
+  color: #81818b;
+  font-weight: 500;
+  transition: 400ms;
+}
+
+.contact-input:focus{
+  border: 2px solid black;
+}
+
+.contact-input:focus::placeholder{
+  opacity: 0;
+  transform: translate(-20px);
+}
+
+.btn-contact{
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 9px 15px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #4b4b55;
+  cursor: pointer;
+  position: relative;
+  transition: 800ms;
+}
+
+btn-contact:hover{
+  color:black;
+}
+
+.btn-contact:after{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0px;
+  background-color: #0000ff;
+  width: 0%;
+  height: 100%;
+  transition: 800ms;
+}
+
+.btn-contact:hover:after{
+  width: 100%;
+  z-index: -1;
+}
+
+textarea{
+  resize: none;
+}
+
+textarea:focus{
+  outline:none;
+}
+
+input:focus{
+  outline:none;
+}
+
+button:focus{
+  outline:none;
+}
+
+.ust{
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.ust h2{
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.ssag{
+  margin-top: 90px;
+  float: right;
+  width: 70%;
+  height: 250px;
+}
+
+.mostar{
+  margin-left: 60px;
+  width: 300px;
+  height: 300px;
+}
+
+.msol{
+  float:left;
+  width:50%;
+  height:630px;
+}
+
+.msag{
+  float: right;
+  width:50%;
+  height:630px;
+}
+
+.footer{
+  height: 800px;
+  width: 100%;
+  background-color: black;
+}
+
+.slider{
+  overflow: hidden;
+
+
+
+}
+
+.slider figure div{
+  float:left;
+  width: 20%;
+
+}
+
+.slide img{
+  width:100%;
+  height: 650px;
+}
+
+
+
+.slider figure img{
+  width: 100%;
+  float: left;
+}
+
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0;
+  animation: 20s slidy infinite;
+}
+
+@keyframes slidy {
+
+  0% { left: 0%;}
+  20% { left: -100%;}
+  40% { left: -200%;}
+  60% { left: -300%;}
+  80% { left: -400%;}
+  100% { left: 0%; }
+}
